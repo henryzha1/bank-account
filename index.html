@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epicodus Credit Union</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <h1>Welcome to the Epicodus Credit Union!</h1>
+
+    <div id="register">
+        <form>
+            <h2>Register a new account:</h2>
+            <label for="name">Name: </label>
+            <input id="name" type="text" name="name"> <br>
+            <label for="initialDeposit">Initial Deposit: </label>
+            <input id="initialDeposit" type="text" name="initialDeposit"> <br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div id="update">
+        <form>
+            <h2>Deposit or withdraw funds: </h2>
+            <label for="deposit">Deposit Amount: </label>
+            <input id="deposit" type="text" name="deposit"> <br>
+            <label for="withdraw">Withdraw Amount: </label>
+            <input id="withdraw" type="text" name="withdraw"> <br>
+            <button type="submit">Deposit/Withdraw</button>
+        </form>
+    </div>
+    
+    <div id="balance" class="hidden">
+        <h2>Name: </h2>
+        <h3>Current Balance: $<span id="current">--</span></h2>
+        <h3>History: </h3>
+        <ul id="transactions"></ul>
+    </div>
+
+    <div id="error1" class="hidden">
+        <h2>ERROR INVALID REGISTRATION, MIN REGISTRATION IS $10. PLEASE REFRESH AND TRY AGAIN</h2>
+    </div>
+
+    <div id="error2" class="hidden">
+        <h2>ERROR INVALID DEPOSIT/WITHDRAWAL. PLEASE TRY AGAIN</h2>
+    </div>
+
+    <div id="error3" class="hidden">
+        <h2>ERROR WITHDRAWING BELOW LIMIT OF -10$. PLEASE TRY AGAIN</h2>
+    </div>
+
+</body>
+</html>
